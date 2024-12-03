@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone Header</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span>Amazon</span>
+        </div>
+        <button class="location" onclick="openModal()">
+                <span>Deliver to</span>
+                <strong>Uzbekistan</strong>
+        </button>
+        <div class="search-bar">
+            <select class="search-dropdown">
+                <option value="all">All</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Search Amazon">
+            <button class="search-button"><img src="./assets/loupe.png" alt=""></button>
+        </div>
+        <div class="menu">
+            <a href="#" class="menu-link">Hello, Shuxrat</a>
+            <a href="#" class="menu-link">Returns & Orders</a>
+            <a href="#" class="cart">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="modal">
+            <div class="modal-header">
+              <h2>Choose your location</h2>
+              <p>Delivery options and delivery speeds may vary for different locations</p>
+            </div>
+            <div class="modal-body">
+              <a href="#" class="manage-address">Manage address book</a>
+              <div class="input-group">
+                <input type="text" placeholder="or enter a US zip code">
+                <button class="apply-button">Apply</button>
+              </div>
+              <p>or ship outside the US</p>
+              <select class="sellect">
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Kyrgyzstan</option>
+                <option>Tajikistan</option>
+              </select>
+            </div>
+            <div class="modal-footer">
+              <button class="done-button" onclick="closeModal()">Done</button>
+            </div>
+          </div>
+    </div>
+    
+    <div class="sidebar">
+        <div class="head">
+          <h2>Hello, Shuxrat</h2>
+        </div>
+        <div class="section">
+          <h3>Digital Content & Devices</h3>
+          <ul>
+            <li><a href="#">Amazon Music</a></li>
+            <li><a href="#">Kindle E-readers & Books</a></li>
+            <li><a href="#">Amazon Appstore</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Shop by Department</h3>
+          <ul>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Computers</a></li>
+            <li><a href="#">Smart Home</a></li>
+            <li><a href="#">Arts & Crafts</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Programs & Features</h3>
+          <ul>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Shop By Interest</a></li>
+            <li><a href="#">Amazon Live</a></li>
+            <li><a href="#">International Shopping</a></li>
+            <li><a href="#">See all</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="nav-bar">
+        <div class="nav-left">
+          <button class="menu-button" onclick="showSidebar()">&#9776; All</button>
+          <div class="logo">Rufus</div>
+        </div>
+        <div class="nav-right">
+          <a href="#">Today's Deals</a>
+          <a href="#">Buy Again</a>
+          <a href="#">Customer Service</a>
+          <a href="#">Registry</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Sell</a>
+        </div>
+      </div>
+
+      <button onclick="removeSidebar()" class="close__menu__btn"><img src="./assets/cross.png" alt=""></button>
+      
+    <div class="amazon-section">
+        <div class="section-header">
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <h2>Small gifts under $20</h2>
+                <img src="./assets/image.png" alt="Small gifts">
+                <a href="">Shop now</a>
+            </div>
+            <div class="card">
+                <h2>Deals in PCs</h2>
+                <img src="./assets/Screenshot 2024-12-03 153140.png" alt="Deals in PCs">
+                <a href="">Shop now</a>
+            </div>
+            <div class="card">
+                <h2>Shop for your home essentials</h2>
+                <div class="grid">
+                    <div>
+                        <img src="./assets/Screenshot 2024-12-03 153253.png" alt="Cleaning Tools">
+                        <p>Cleaning Tools</p>
+                    </div>
+                    <div>
+                        <img src="./assets/Screenshot 2024-12-03 153416.png" alt="Home Storage">
+                        <p>Home Storage</p>
+                    </div>
+                    <div>
+                        <img src="./assets/Screenshot 2024-12-03 153426.png" alt="Home Decor">
+                        <p>Home Decor</p>
+                    </div>
+                    <div>
+                        <img src="./assets/Screenshot 2024-12-03 153433.png" alt="Bedding">
+                        <p>Bedding</p>
+                    </div>
+                    <a href="">Shop now</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Delightful deals for everyone</h2>
+                <img src="./assets/Screenshot 2024-12-03 153449.png" alt="Deals for everyone">
+                <a href="">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-section">
+        <div class="card-grid">
+            <div class="product-card">
+                <h2 class="card-title">Top categories in Kitchen appliances</h2>
+                <div class="subcategory-grid">
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 160914.png" alt="Cleaning Tools">
+                        <p class="subcategory-label">Cooker</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 160923.png" alt="Home Storage">
+                        <p class="subcategory-label">Coffie</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 160929.png" alt="Home Decor">
+                        <p class="subcategory-label">Post and Pans</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 160937.png" alt="Bedding">
+                        <p class="subcategory-label">Kettles</p>
+                    </div>
+                    <p><a href="">Shop Now</a></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Toys under $25</h2>
+                <img class="card-image" src="./assets/Screenshot 2024-12-03 160944.png" alt="Deals in PCs">
+                <a href="">Shop Now</a>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Get your game on</h2>
+                <img class="card-image" src="./assets/Screenshot 2024-12-03 153140.png" alt="Deals in PCs">
+                <a href="">Shop now</a>
+            </div>
+            <div class="product-card">
+                <h2 class="card-title">Refresh your space</h2>
+                <div class="subcategory-grid">
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 160955.png" alt="Cleaning Tools">
+                        <p class="subcategory-label">Cleaning Tools</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 161004.png" alt="Home Storage">
+                        <p class="subcategory-label">Home Storage</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 161012.png" alt="Home Decor">
+                        <p class="subcategory-label">Home Decor</p>
+                    </div>
+                    <div class="subcategory-item">
+                        <img class="subcategory-image" src="./assets/Screenshot 2024-12-03 161027.png" alt="Bedding">
+                        <p class="subcategory-label">Bedding</p>
+                    </div>
+                    <a href="">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
